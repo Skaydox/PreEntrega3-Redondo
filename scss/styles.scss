@@ -1,0 +1,487 @@
+$color-primario: rgb(255, 255, 255);
+$color-secundario: rgb(218, 218, 218);
+
+@mixin cuadro {
+    border-radius: 16px;
+    padding: 16px;
+    margin: 16px;
+    max-width: 700px;
+    text-align: center;
+    height: 150px;
+    background-color: rgba(135, 135, 135, 0.5);
+    box-shadow: 0px 0px 15px 5px rgba(135, 135, 135, 0.5);
+    transition: all 0.3s ease;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:space-around;
+    align-items: center;
+}
+
+@mixin flex_d {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+    align-items: center;
+}
+@mixin flex_i {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.flex_derecha{
+    @include flex_i;
+}
+.flex_izquierda{
+    @include flex_d;
+}
+
+.padding_banner-text {
+    padding: 128px;
+    font-size: 2rem;
+    font-weight: bold;  
+}
+
+.imagenBanner {
+    transition: .3s all ease;
+    &:hover{
+        transform: scale(1.02,1.02);
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#margin-fix {
+    padding-top: 75px;
+}
+#margin-fix2 {
+    padding-top: 100px;
+}
+#margin-fixinfo {
+    margin-top: 100px;
+}
+
+#logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+}
+#logo img {
+    margin: 0 16px 0 0;
+    width: 64px;
+    height: 64px;
+}
+#logo h2 {
+    color:#161925;
+}
+
+.h3-text{
+    text-align: center;
+}
+.text-special{
+    text-align: center;
+    color: #161925;
+}
+
+header {
+    position:fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:linear-gradient(to top, #7198c2, #8EA8C3);
+    padding: 10px 64px;
+
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 5px 15px 5px rgba(135, 135, 135, 0.3);
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    nav ul {
+        padding-top: 12px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        list-style-type: none;
+
+        li a {
+            padding: 5px 10px;
+            margin: 0px 5px;
+            text-decoration: none;
+            color: $color-primario;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 1.3rem;
+        
+            transition: all .2s ease;
+            &:hover {
+                color: black;
+                background-color: $color-primario;
+                border-radius: 16px;
+            }
+        }
+    }
+}
+
+._bannerInit{
+    width: 100%;
+    height: 50%;
+    padding-top: 100px;
+
+    background-image: url("../assets/img/banner_principal.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items:center;
+}
+.cuadro{
+    @include cuadro;
+}
+.cuadro:hover{
+    transform:scale(1.05,1.05);
+}
+.textoBanner_Main{
+    color: $color-primario;
+    font-size: 3.0rem;
+    text-decoration: underline;
+    font-weight: 800;
+    font-style: italic;
+}
+.textoBanner_Desc{
+    color: #e3f4ff;
+    font-weight: 700;
+    font-style: italic;  
+}
+.descuentoBanner{
+    width: 300px;
+    height: 300px;
+    transition: all 0.5s ease;
+    border-radius: 20%;
+}
+.descuentoBanner:hover{
+    transform: rotate(-20deg) scale(1.1,1.1);
+}
+
+.inp_search {
+    margin-left: 16px;
+    text-align: center;
+    width: 228px;
+    border: 3px white solid;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+.inp_search:hover {
+    width: 228px;
+    transform: scale(1.1,1.1);
+}
+
+#cuadroNot_flex{ 
+    margin-top: 32px;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;  
+}
+.cuadroNot {
+    
+    margin: 16px;
+    height: 300px;
+    width: 300px;
+    border: 2px solid rgba(0,0,0,.1);
+    box-shadow: 0px 0px 15px 5px rgba(135, 135, 135, 0.5);
+    background-color: $color-primario;
+    text-align: center;
+
+    transition: all 0.2s ease;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &:hover {
+        box-shadow: 0px 0px 30px 10px rgba(135, 135, 135, 0.3);
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.seccionCompra__h2 {
+    margin: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.seecion_compraBG{
+    background-image: url(../assets/img/remeras/remera.jpg);
+    background-size:cover;
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.seecion_prendaBG{
+    background-image: url(../assets/img/banner_prendas.png);
+    background-size:cover;
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-text{
+    color:white;
+}
+
+.seccionCompra__h2--descuento {
+    margin: 10px;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgb(86, 196, 110);
+    background-color: rgba(0, 0, 0, 0.371);
+    animation-name: descuento;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes descuento {
+    0% {transform:scale(1,1);}
+    50% {transform:scale(1.1,1.1);}
+}
+
+.dropdownM {
+    display:inline-block;
+    justify-self: center;
+}
+
+.PublicacionesCuadro{
+    border-radius: 16px;
+    width: 350px;
+    height: 500px;
+    margin: 16px 16px;
+    border-top: 5px rgb(217, 217, 217) solid;
+    border-bottom: 5px rgb(217, 217, 217) solid;
+    border-left: 5px rgb(217, 217, 217) solid;
+    border-right: 5px rgb(217, 217, 217) solid;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Publicaciones{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;    
+}
+.PublicacionesCuadro__img {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 16px;
+    border: 1px solid rgb(194, 194, 194);
+}
+.PublicacionCuadro_preciobtn{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: space-around;    
+}
+.PublicacionesCuadro__precio{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    color:#8EA8C3;
+}
+.PublicacionesCuadro__precioNegro{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    color:black;
+}
+.PublicacionesCuadro__precioT{
+    text-decoration: line-through;
+    font-size: 1rem;
+    font-style: italic;
+    color: black;
+}
+.gridCompra__precio {
+    color: black;
+    margin: 8px auto;
+    width: 100px;
+    font-size: 2rem;
+    font-weight: 600px;
+    background-color: rgba(64, 252, 51, 0.556);
+    border-radius: 8px;
+}
+.gridCompra__btn {
+    padding: 8px 20px;
+    color:black;
+    border-color: white;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+.gridCompra__btn:hover {
+    color:white;
+    background-color: #161925;
+}
+
+.contacto-fix{
+    margin-left:46px
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 32px;
+    background-color: #161925;
+    color:white;
+    text-align: center;
+    align-self: center;
+}
+
+
+@media (max-width: 1221px) {
+    header {
+        padding: 10px 64px;
+    
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ._bannerInit{
+        width: 100%;
+        height: 55%;
+        padding-top: 140px;
+    }
+
+    #margin-fix {
+        padding-top: 130px;
+    }
+    #margin-fix2 {
+        padding-top: 160px;
+    }
+}
+@media (max-width: 114px) {
+    .cuadro{
+        width: 400px;
+    }
+
+    ._bannerInit{
+        width: 100%;
+        height: 75%;
+        padding-top: 150px;
+    
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items:center;
+    }
+}
+
+@media (max-width: 829px) {
+    ._bannerInit{
+        padding-top: 155px;
+    }
+
+    #margin-fix {
+        padding-top: 160px;
+    }
+    #margin-fix2 {
+        padding-top: 185px;
+    }
+}
+
+@media (max-width: 585px) {
+    ._bannerInit{
+        width: 100%;
+        height: 80%;
+        padding-top: 150px;
+    }
+}
+
+@media (max-width: 519px) {
+    ._bannerInit{
+        width: 100%;
+        height: 90%;
+        padding-top: 160px;
+    }
+
+    #margin-fix {
+        padding-top: 190px;
+    }
+    #margin-fix2 {
+        padding-top: 215px;
+    }
+}
+
+@media (max-width: 470px) {
+    #margin-fix2 {
+        padding-top: 250px;
+    }
+}
+
+@media (max-width: 452px) {
+    ._bannerInit{
+        width: 100%;
+        height: 100%;
+        padding-top: 280px;
+    }
+
+    #logo {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo img {
+        width: 64px;
+        height: 64px;
+        justify-items: center;
+    }
+
+    #margin-fix {
+        padding-top: 250px;
+    }
+    #margin-fix2 {
+        padding-top: 290px;
+    }
+}

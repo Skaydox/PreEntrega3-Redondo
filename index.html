@@ -1,0 +1,255 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Meta necesarias para la tercera preentrega-->
+    <meta name="description" content="Tienda de ropa 'NERVERLAND', encuentra toda la ropa que desees en el mejor sitio web de compra para toda la republica Argentina.">
+    <meta name="keywords" content="Tienda, NEVERLAND, Ropa, Argentina, Julián, La mejor tienda de ropa, Coderhouse curso">
+    <!--Icono de la página-->
+    <link rel="icon" type="image/ico" href="./icon.ico"/>
+     <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--Fonts necesarias para la página | 'Karla', sans-serif; | etc-->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/f941a2022c.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--CSS con SCSS-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Inicio - NEVERLAND</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./assets/img/logo.png">
+            <h2>NEVERLAND</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="./pages/donde-encontrarnos.html">Donde encontrarnos</a></li>
+                <li><a href="./pages/imagenes.html">Imágenes</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <input class="inp_search" type="text" placeholder="Buscar articulo">
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="_bannerInit">
+                <div class="cuadro">
+                    <h1 class="textoBanner_Main">NEVERLAND</h1>
+                    <h3 class="textoBanner_Desc">La mejor página para comprar ropa de Argentina.</h3>
+                    <h4 class="textoBanner_Desc">¡Confía en nosotros! :)</h4>
+                </div>
+                <a href="#25descuento">
+                    <img src="./assets/img/25descuento.png" alt="25% de descuento" class="descuentoBanner">
+                </a>
+        </section>
+        <section id="cuadroNot_flex">
+            <div class="cuadroNot">
+                <img src="./assets/img/5790530.png" alt="Monedas">
+                <h3>Ventas económicas</h3>
+                <p>¡La mejor cotizacion del mercado!</p>
+            </div>
+            <div class="cuadroNot">
+                <img src="./assets/img/carrito.png" alt="Carrito">
+                <h3>Compras aseguradas</h3>
+                <p>Si no te gustó lo que recibiste,<br> ¡te devolvemos el dinero!</p>
+            </div>
+            <div class="cuadroNot">
+                <img src="./assets/img/correo.png" alt="Cartas">
+                <h3>Atención al cliente 24/7</h3>
+                <p>Fácil y rápido <a href="#">¡Necesito ayuda!</a></p>
+            </div>
+            <div class="cuadroNot">
+                <img src="./assets/img/cartas.png" alt="Cartas">
+                <h3>Mensajería online</h3>
+                <p>¡Contacte con su comprador si tiene dudas!</p>
+            </div>
+            <div class="cuadroNot">
+                <img src="./assets/img/lupa.png" alt="Lupa">
+                <h3>Encuentra lo que buscas</h3>
+                <p>¡Una amplia variedad de productos!</p>
+            </div>
+        </section>
+        <section class="seccionCompra">
+            <h2 id="25descuento" class="seccionCompra__h2">Productos</h2>
+            <hr>
+            <h2>Filtros: </h2>
+            <div class="dropdown dropdownM">
+                <button class="btn btn-secondary dropdown-toggle btn-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tipo de ropa
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Remeras</a></li>
+                  <li><a class="dropdown-item" href="#">Medias</a></li>
+                  <li><a class="dropdown-item" href="#">Pantalones</a></li>
+                </ul>
+            </div>
+            <div class="dropdown dropdownM">
+                <button class="btn btn-secondary dropdown-toggle btn-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Talles
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">XS</a></li>
+                  <li><a class="dropdown-item" href="#">S</a></li>
+                  <li><a class="dropdown-item" href="#">M</a></li>
+                  <li><a class="dropdown-item" href="#">L</a></li>
+                  <li><a class="dropdown-item" href="#">XL</a></li>
+                  <li><a class="dropdown-item" href="#">XXL</a></li>
+                  <li><a class="dropdown-item" href="#">XXXL</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="seecion_compraBG">
+                <h2 class="seccionCompra__h2--descuento"><span class="white-text">25%</span> de descuento</h2>
+            </div>
+            <hr>
+        </section>
+        <section class="Publicaciones">
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">New Balance</h3>
+                <p>Accelerate Short Sleeve MT73061 running</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/remeras/Remera_1.jpg" alt="Remera 1 New balance">
+                <div class="PublicacionCuadro_preciobtn">
+                <p class="PublicacionesCuadro__precio">$750 <span class="PublicacionesCuadro__precioT">$1000</span></p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">New Balance</h3>
+                <p>Classic Logo Tee MT63554</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/remeras/Remera_2.jpg" alt="Remera 2 New balance">
+                <div class="PublicacionCuadro_preciobtn">
+                <p class="PublicacionesCuadro__precio">$750 <span class="PublicacionesCuadro__precioT">$1000</span></p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">New Balance</h3>
+                <p>Running Ice Short Sleeve MT63223</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/remeras/Remera_3.jpg" alt="Remera 3 New balance">
+                <div class="PublicacionCuadro_preciobtn">
+                <p class="PublicacionesCuadro__precio">$750 <span class="PublicacionesCuadro__precioT">$1000</span></p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">New Balance</h3>
+                <p>Graphic Tee MT01931</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/remeras/Remera_4.jpg" alt="Remera 4 New balance">
+                <div class="PublicacionCuadro_preciobtn">
+                <p class="PublicacionesCuadro__precio">$750 <span class="PublicacionesCuadro__precioT">$1000</span></p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">New Balance</h3>
+                <p>Athletics Keyline MT01510</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/remeras/Remera_5.jpg" alt="Remera 5 New balance">
+                <div class="PublicacionCuadro_preciobtn">
+                <p class="PublicacionesCuadro__precio">$750 <span class="PublicacionesCuadro__precioT">$1000</span></p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">New Balance</h3>
+                <p>Essentials Stacked Logo Tee MT73587</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/remeras/Remera_6.jpg" alt="Remera 6 New balance">
+                <div class="PublicacionCuadro_preciobtn">
+                <p class="PublicacionesCuadro__precio">$750 <span class="PublicacionesCuadro__precioT">$1000</span></p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">New Balance</h3>
+                <p>Heather Tech Tee MT81082</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/remeras/Remera_7.jpg" alt="Remera 7 New balance">
+                <div class="PublicacionCuadro_preciobtn">
+                <p class="PublicacionesCuadro__precio">$750 <span class="PublicacionesCuadro__precioT">$1000</span></p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">New Balance</h3>
+                <p>Striped Accelerate MT03207</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/remeras/Remera_8.jpg" alt="Remera 8 New balance">
+                <div class="PublicacionCuadro_preciobtn">
+                <p class="PublicacionesCuadro__precio">$750 <span class="PublicacionesCuadro__precioT">$1000</span></p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div class="seecion_prendaBG">
+            <h2 class="seccionCompra__h2--descuento text-white">Prendas</h2>
+        </div>
+        <hr>
+        <section class="Publicaciones">
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">Medias</h3>
+                <p>-Descripción-</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/medias/media_1.jpg" alt="Media 1">
+                <div class="PublicacionCuadro_preciobtn">
+                    <p class="PublicacionesCuadro__precioNegro">$300</p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">Medias</h3>
+                <p>-Descripción-</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/medias/media_2.avif" alt="Media 2">
+                <div class="PublicacionCuadro_preciobtn">
+                    <p class="PublicacionesCuadro__precioNegro">$300</p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">Medias</h3>
+                <p>-Descripción-</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/medias/media_3.avif" alt="Media 3">
+                <div class="PublicacionCuadro_preciobtn">
+                <p class="PublicacionesCuadro__precioNegro">$300</p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">Medias</h3>
+                <p>-Descripción-</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/medias/media_4.avif" alt="Media 4">
+                <div class="PublicacionCuadro_preciobtn">
+                    <p class="PublicacionesCuadro__precioNegro">$300</p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">Pantalon</h3>
+                <p>-Descripción-</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/Pantalon/pantalon_1.jpg" alt="Pantalon 1">
+                <div class="PublicacionCuadro_preciobtn">
+                    <p class="PublicacionesCuadro__precioNegro">$2000</p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">Pantalon</h3>
+                <p>-Descripción-</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/Pantalon/pantalon_2.jpg" alt="Pantalon 2">
+                <div class="PublicacionCuadro_preciobtn">
+                    <p class="PublicacionesCuadro__precioNegro">$2000</p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">Pantalon</h3>
+                <p>-Descripción-</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/Pantalon/pantalon_3.jpg" alt="Pantalon 3">
+                <div class="PublicacionCuadro_preciobtn">
+                <p class="PublicacionesCuadro__precioNegro">$2000</p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+            <div class="PublicacionesCuadro">
+                <h3 class="PublicacionesCuadro__title">Pantalon</h3>
+                <p>-Descripción-</p>
+                <img class="PublicacionesCuadro__img" src="./assets/img/Pantalon/pantalon_4.jpg" alt="Pantalon 4">
+                <div class="PublicacionCuadro_preciobtn">
+                    <p class="PublicacionesCuadro__precioNegro">$1700</p> <button class="gridCompra__btn">Comprar</button> 
+                </div>
+            </div>
+        </section>
+        <hr>
+        <footer>
+            <h3>Footer<br>Todos los derechos reservados 2022 © | <a href="https://www.instagram.com/julian.syx" target="_BLANK">Instagram</a></h3>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f941a2022c.js" crossorigin="anonymous"></script>
+</body>
+</html>

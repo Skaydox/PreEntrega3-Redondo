@@ -1,0 +1,31 @@
+{
+  "name": "preentrega3-redondo",
+  "version": "1.0.0",
+  "description": "Tienda de ropa 'NERVERLAND', encuentra toda la ropa que desees en el mejor sitio web de compra para toda la republica Argentina.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "Tienda",
+    "NEVERLAND",
+    "Ropa",
+    "Argentina",
+    "Julián",
+    "La",
+    "mejor",
+    "tienda",
+    "de",
+    "ropa",
+    "Coderhouse",
+    "curso"
+  ],
+  "author": "Redondo Julian",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
